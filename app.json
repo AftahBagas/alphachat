@@ -1,37 +1,34 @@
 {
-   "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
-   "description": "Telegram group management bot.",
-   "env": {
-      "TOKEN": {
-         "description": "Your bot token.",
-         "required": true,
-         "value": ""
-      },
-      "URL": {
-         "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
-         "required": false,
-         "value": ""
-      },
-      "WEBHOOK": {
-         "description": "Setting this to ANYTHING will enable webhooks.",
-         "required": false,
-         "value": ""
-      },  
-   },
-   "keywords": [
-      "telegram",
-      "group",
-      "manager",
-      "bot"
-   ],
-   "logo": "https://telegra.ph/file/cf0416739eb84b4157658.jpg",
-   "name": "Alpha",
-   "repository": "https://github.com/Aftahbagas/alfabot"
+  "name": "MyTelegramOrgRoBot",
+  "description": "get your APP ID and API HASH inside Telegram",
+  "keywords": [
+    "telegram",
+    "best",
+    "app",
+    "scrapper",
+    "3"
+  ],
+  "repository": "https://github.com/BOT-PROJECT-MANSIEZ/mytelegrambotrob",
+  "success_url": "https://telegram.dog/SpEcHlDe",
+  "website": "https://github.com/BOT-PROJECT-MANSIEZ/mytelegrambotrob",
+  "env": {
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
+    },
+    "TG_BOT_TOKEN": {
+      "description": "Your bot token, as a string."
+    },
+    "URL": {
+      "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/",
+      "value": "https://example.com/"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "stack": "heroku-20"
 }
