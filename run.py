@@ -6,7 +6,7 @@ def homepage():
 
 port = int(os.environ.get('PORT', 33507))
 
-myBot = getMyBot(HOSTNAME=r"https://chatanonymously.herokuapp.com")
+myBot = getMyBot(HOSTNAME=r"https://alphachatz.herokuapp.com")
 
 myBot.getFlask().route("/", methods=['GET'], endpoint="routeHomepage")(homepage)
 
