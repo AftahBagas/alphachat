@@ -1,0 +1,37 @@
+{
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "description": "Telegram group management bot.",
+   "env": {
+      "TOKEN": {
+         "description": "Your bot token.",
+         "required": true,
+         "value": ""
+      },
+      "URL": {
+         "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
+         "required": false,
+         "value": ""
+      },
+      "WEBHOOK": {
+         "description": "Setting this to ANYTHING will enable webhooks.",
+         "required": false,
+         "value": ""
+      },  
+   },
+   "keywords": [
+      "telegram",
+      "group",
+      "manager",
+      "bot"
+   ],
+   "logo": "https://telegra.ph/file/cf0416739eb84b4157658.jpg",
+   "name": "Alpha",
+   "repository": "https://github.com/Aftahbagas/alfabot"
+}
