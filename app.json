@@ -1,34 +1,34 @@
 {
-  "name": "MyTelegramOrgRoBot",
-  "description": "get your APP ID and API HASH inside Telegram",
-  "keywords": [
-    "telegram",
-    "best",
-    "app",
-    "scrapper",
-    "3"
-  ],
-  "repository": "https://github.com/BOT-PROJECT-MANSIEZ/mytelegrambotrob",
-  "success_url": "https://telegram.dog/SpEcHlDe",
-  "website": "https://github.com/BOT-PROJECT-MANSIEZ/mytelegrambotrob",
-  "env": {
-    "WEBHOOK": {
-      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
-      "value": "ANYTHING"
+    "name": "botfaher Bot",
+    "description": "Modular  Telegram Bot !",
+    "keywords": [
+        "telegram",
+        "bot",
+        "plugin",
+        "modular",
+        "productivity"
+    ],
+    "repository": "https://github.com/meong",
+    "website": "https://telegram.dog/meonggg",
+    "success_url": "https://t.me/meong",
+    "env": {
+        "APP_ID": {
+            "description": "Get this value from my.telegram.org! Please do not steal"
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org! Please do not steal"
+        },
+        "TG_BOT_TOKEN": {
+            "description": "Obtain a Telegram bot token by contacting @BotFather"
+        }
     },
-    "TG_BOT_TOKEN": {
-      "description": "Your bot token, as a string."
-    },
-    "URL": {
-      "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/",
-      "value": "https://example.com/"
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
     }
-  },
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "free"
-    }
-  },
-  "stack": "heroku-20"
 }
